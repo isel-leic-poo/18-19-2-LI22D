@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a93a1b06-a86d-4941-b428-c7457ed2bf60" name="Default Changelist" comment="" />
+    <list default="true" id="a93a1b06-a86d-4941-b428-c7457ed2bf60" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/containers.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/isel/adeetc/poo/DynamicArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/isel/adeetc/poo/DynamicArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,32 +14,53 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/containers$DynamicArrayTests.ic" NAME="DynamicArrayTests Coverage Results" MODIFIED="1551268830668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>edu.isel.adeetc.poo.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="141" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/DynamicArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="757">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="1232">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
-                <element signature="method#growArrayIfNeeded#0;class#DynamicArray#0" />
-                <element signature="e#894#895#0" expanded="true" />
-                <element signature="e#927#928#0" expanded="true" />
+                <element signature="method#DynamicArray#0;class#DynamicArray#0" />
+                <element signature="e#1748#1749#0" expanded="true" />
+                <element signature="e#1981#1982#0" expanded="true" />
+                <element signature="e#1971#1972#0" expanded="true" />
+                <element signature="e#2005#2006#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java">
+        <entry file="file://$PROJECT_DIR$/test/edu/isel/adeetc/poo/DynamicArrayTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="713">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#addAtZeroIndexOnNonEmptyArray_insertsElement#0;class#DynamicArrayTests#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -43,14 +69,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java" />
+        <option value="$PROJECT_DIR$/test/edu/isel/adeetc/poo/TestRunner.java" />
+        <option value="$PROJECT_DIR$/test/edu/isel/adeetc/poo/DynamicArrayTests.java" />
         <option value="$PROJECT_DIR$/src/edu/isel/adeetc/poo/DynamicArray.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="1001" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -68,12 +96,12 @@
             <path>
               <item name="containers" type="b2602c69:ProjectViewProjectNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="containers" type="b2602c69:ProjectViewProjectNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="poo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -85,7 +113,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551090039557" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551275601699" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -99,9 +131,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.DynamicArrayTests">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.isel.adeetc.poo.Main" />
+      <module name="containers" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="edu.isel.adeetc.poo.TestRunner" />
       <module name="containers" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,6 +152,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DynamicArrayTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="containers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.isel.adeetc.poo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.isel.adeetc.poo" />
+      <option name="MAIN_CLASS_NAME" value="edu.isel.adeetc.poo.DynamicArrayTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicArrayTests.removeAtIndex_returnsElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="containers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.isel.adeetc.poo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.isel.adeetc.poo" />
+      <option name="MAIN_CLASS_NAME" value="edu.isel.adeetc.poo.DynamicArrayTests" />
+      <option name="METHOD_NAME" value="removeAtIndex_returnsElement" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Tests" />
+      <item itemvalue="JUnit.DynamicArrayTests" />
+      <item itemvalue="JUnit.DynamicArrayTests.removeAtIndex_returnsElement" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DynamicArrayTests" />
+        <item itemvalue="JUnit.DynamicArrayTests.removeAtIndex_returnsElement" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -127,54 +209,115 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="DynamicArrayTests - 2019.02.27 at 13h 30m 48s.xml">
+      <configuration name="DynamicArrayTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DynamicArrayTests - 2019.02.27 at 13h 32m 11s.xml">
+      <configuration name="DynamicArrayTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DynamicArrayTests - 2019.02.27 at 13h 32m 32s.xml">
+      <configuration name="DynamicArrayTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DynamicArrayTests - 2019.02.27 at 13h 33m 47s.xml">
+      <configuration name="DynamicArrayTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DynamicArrayTests - 2019.02.27 at 13h 36m 39s.xml">
+      <configuration name="DynamicArrayTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DynamicArrayTests - 2019.02.27 at 13h 40m 32s.xml">
+      <configuration name="DynamicArrayTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DynamicArrayTests - 2019.02.27 at 13h 45m 08s.xml">
+      <configuration name="DynamicArrayTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DynamicArrayTests_removeAtIndex_returnsElement - 2019.02.27 at 13h 46m 53s.xml">
+      <configuration name="DynamicArrayTests.removeAtIndex_returnsElement" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DynamicArrayTests_removeAtIndex_returnsElement - 2019.02.27 at 13h 48m 18s.xml">
+      <configuration name="DynamicArrayTests.removeAtIndex_returnsElement" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DynamicArrayTests - 2019.02.27 at 13h 48m 32s.xml">
+      <configuration name="DynamicArrayTests" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="1001" extended-state="6" />
+    <frame x="0" y="23" width="1024" height="745" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49944994" weight="0.24959612" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49944994" weight="0.26476577" />
       <window_info id="Structure" order="1" sideWeight="0.50055003" side_tool="true" weight="0.24959612" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32893288" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4257274" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3506891" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32924962" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32924962" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.34521386" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/edu/isel/adeetc/poo/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="114">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/edu/isel/adeetc/poo/DynamicArrayTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addAtZeroIndexOnNonEmptyArray_insertsElement#0;class#DynamicArrayTests#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/DynamicArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="1232">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
           <folding>
-            <element signature="method#growArrayIfNeeded#0;class#DynamicArray#0" />
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#927#928#0" expanded="true" />
+            <element signature="method#DynamicArray#0;class#DynamicArray#0" />
+            <element signature="e#1748#1749#0" expanded="true" />
+            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#1971#1972#0" expanded="true" />
+            <element signature="e#2005#2006#0" expanded="true" />
           </folding>
         </state>
       </provider>
