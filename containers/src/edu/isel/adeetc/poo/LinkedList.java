@@ -5,32 +5,6 @@ package edu.isel.adeetc.poo;
  */
 public class LinkedList implements Sequence {
 
-    private static class ListIterator implements Iterator {
-
-        private final LinkedList list;
-        private Node iterator;
-
-        ListIterator(LinkedList list) {
-            this.list = list;
-            this.iterator = list.head;
-        }
-
-        @Override
-        public int next() {
-            if (!hasNext())
-                throw new IllegalStateException();
-
-            int elem = iterator.value;
-            iterator = iterator.next;
-            return elem;
-        }
-
-        @Override
-        public boolean hasNext() {
-            return iterator != list.tail;
-        }
-    }
-
     /**
      * Class whose instances represent list nodes.
      */
@@ -225,6 +199,23 @@ public class LinkedList implements Sequence {
      */
     @Override
     public Iterator iterator() {
-        return new ListIterator(this);
+        return new Iterator() {
+            private Node iterator = head;
+
+            @Override
+            public int next() {
+                if (!hasNext())
+                    throw new IllegalStateException();
+
+                int elem = iterator.value;
+                iterator = iterator.next;
+                return elem;
+            }
+
+            @Override
+            public boolean hasNext() {
+                return iterator != tail;
+            }
+        };
     }
 }

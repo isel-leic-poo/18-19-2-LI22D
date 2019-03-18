@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a93a1b06-a86d-4941-b428-c7457ed2bf60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/edu/isel/adeetc/poo/LinkedListTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/isel/adeetc/poo/DynamicArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/isel/adeetc/poo/DynamicArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/isel/adeetc/poo/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/isel/adeetc/poo/LinkedList.java" afterDir="false" />
@@ -29,81 +28,38 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/DynamicArray.java">
+        <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="47" column="44" lean-forward="true" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+            <state relative-caret-position="195">
+              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
               <folding>
-                <element signature="docComment;class#DynamicArray#0" />
-                <element signature="class#Iterator#0;class#DynamicArray#0" />
-                <element signature="e#420#421#0" expanded="true" />
-                <element signature="e#463#464#0" expanded="true" />
-                <element signature="method#growArrayIfNeeded#0;class#DynamicArray#0" />
-                <element signature="e#1491#1492#0" expanded="true" />
-                <element signature="method#add#0;class#DynamicArray#0" />
-                <element signature="method#add#1;class#DynamicArray#0" />
-                <element signature="e#3568#3569#0" expanded="true" />
-                <element signature="e#4304#4305#0" expanded="true" />
-                <element signature="e#4845#4846#0" expanded="true" />
-                <element signature="e#5055#5056#0" expanded="true" />
+                <element signature="method#displayOdds#0;class#Main#0" />
+                <element signature="method#displayOddsLikeABoss#0;class#Main#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/LinkedList.java">
+        <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/DynamicArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="154" column="24" selection-start-line="154" selection-start-column="24" selection-end-line="154" selection-end-column="24" />
+            <state relative-caret-position="384">
+              <caret line="164" column="39" lean-forward="true" selection-start-line="164" selection-start-column="39" selection-end-line="164" selection-end-column="39" />
               <folding>
-                <element signature="class#ArrayIterator#0;class#LinkedList#0" />
-                <element signature="e#709#710#0" expanded="true" />
-                <element signature="e#749#750#0" expanded="true" />
-                <element signature="class#Node#0;class#LinkedList#0" />
-                <element signature="e#4206#4207#0" expanded="true" />
-                <element signature="e#5027#5028#0" expanded="true" />
-                <element signature="method#remove#1;class#LinkedList#0" />
-                <element signature="e#5906#5907#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Iterable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" selection-start-line="7" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Sequence.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="36" lean-forward="true" selection-start-line="30" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/edu/isel/adeetc/poo/LinkedListTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#DynamicArray#0" />
+                <element signature="method#growArrayIfNeeded#0;class#DynamicArray#0" />
+                <element signature="e#1453#1454#0" expanded="true" />
+                <element signature="e#1491#1492#0" expanded="true" />
+                <element signature="method#add#0;class#DynamicArray#0" />
+                <element signature="method#add#1;class#DynamicArray#0" />
+                <element signature="e#3541#3542#0" expanded="true" />
+                <element signature="e#3568#3569#0" expanded="true" />
+                <element signature="e#4270#4271#0" expanded="true" />
+                <element signature="e#4304#4305#0" expanded="true" />
+                <element signature="e#4810#4811#0" expanded="true" />
+                <element signature="e#4845#4846#0" expanded="true" />
+                <element signature="e#4975#4976#0" expanded="true" />
+                <element signature="e#5034#5035#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,16 +92,19 @@
         <option value="$PROJECT_DIR$/test/edu/isel/adeetc/poo/TestRunner.java" />
         <option value="$PROJECT_DIR$/test/edu/isel/adeetc/poo/DynamicArrayTests.java" />
         <option value="$PROJECT_DIR$/test/edu/isel/adeetc/poo/LinkedListTests.java" />
-        <option value="$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java" />
         <option value="$PROJECT_DIR$/src/edu/isel/adeetc/poo/Iterator.java" />
         <option value="$PROJECT_DIR$/src/edu/isel/adeetc/poo/Sequence.java" />
-        <option value="$PROJECT_DIR$/src/edu/isel/adeetc/poo/DynamicArray.java" />
         <option value="$PROJECT_DIR$/src/edu/isel/adeetc/poo/Iterable.java" />
+        <option value="$PROJECT_DIR$/src/edu/isel/adeetc/poo/IDoSomething.java" />
+        <option value="$PROJECT_DIR$/src/edu/isel/adeetc/poo/SomeClass.java" />
+        <option value="$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java" />
         <option value="$PROJECT_DIR$/src/edu/isel/adeetc/poo/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/edu/isel/adeetc/poo/DynamicArray.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="79" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="777" />
@@ -157,6 +116,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,7 +150,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -198,7 +157,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552327793628" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552908995024" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -332,12 +291,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LinkedListTests - 2019.03.06 at 10h 28m 13s.xml">
-      <configuration name="LinkedListTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedListTests - 2019.03.06 at 11h 11m 50s.xml">
-      <configuration name="LinkedListTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LinkedListTests - 2019.03.06 at 11h 41m 10s.xml">
       <configuration name="LinkedListTests" configurationId="JUnit" />
     </history-entry>
@@ -362,6 +315,12 @@
     <history-entry file="edu_isel_adeetc_poo_in_containers - 2019.03.11 at 18h 06m 57s.xml">
       <configuration name="edu.isel.adeetc.poo in containers" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="edu_isel_adeetc_poo_in_containers - 2019.03.13 at 11h 33m 06s.xml">
+      <configuration name="edu.isel.adeetc.poo in containers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="edu_isel_adeetc_poo_in_containers - 2019.03.18 at 11h 36m 37s.xml">
+      <configuration name="edu.isel.adeetc.poo in containers" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -372,10 +331,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31761006" weight="0.39176092" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31761006" visible="true" weight="0.3029079" />
       <window_info id="Structure" order="1" sideWeight="0.6823899" side_tool="true" weight="0.39176092" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -384,15 +342,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.47808218" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.6182618" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47737226" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4177832" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32924962" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32924962" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32886723" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -402,20 +360,11 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.34521386" />
+      <window_info anchor="right" id="PlantUML" order="9" />
     </layout>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test/edu/isel/adeetc/poo/TestRunner.java" />
-    <entry file="file://$PROJECT_DIR$/test/edu/isel/adeetc/poo/DynamicArrayTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-475">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/IllegalArgumentException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-28">
@@ -436,49 +385,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Iterable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="165">
           <caret line="11" selection-start-line="7" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Sequence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="36" lean-forward="true" selection-start-line="30" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/DynamicArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="47" column="44" lean-forward="true" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
-          <folding>
-            <element signature="docComment;class#DynamicArray#0" />
-            <element signature="class#Iterator#0;class#DynamicArray#0" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="method#growArrayIfNeeded#0;class#DynamicArray#0" />
-            <element signature="e#1491#1492#0" expanded="true" />
-            <element signature="method#add#0;class#DynamicArray#0" />
-            <element signature="method#add#1;class#DynamicArray#0" />
-            <element signature="e#3568#3569#0" expanded="true" />
-            <element signature="e#4304#4305#0" expanded="true" />
-            <element signature="e#4845#4846#0" expanded="true" />
-            <element signature="e#5055#5056#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="540">
+          <caret line="36" selection-start-line="30" selection-end-line="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/edu/isel/adeetc/poo/LinkedListTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
+        <state relative-caret-position="1110">
           <caret line="76" selection-start-line="76" selection-end-line="76" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -486,19 +407,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/SomeClass.java" />
+    <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/IDoSomething.java" />
+    <entry file="file://$PROJECT_DIR$/containers.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="154" column="24" selection-start-line="154" selection-start-column="24" selection-end-line="154" selection-end-column="24" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
-            <element signature="class#ArrayIterator#0;class#LinkedList#0" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
             <element signature="class#Node#0;class#LinkedList#0" />
-            <element signature="e#4206#4207#0" expanded="true" />
-            <element signature="e#5027#5028#0" expanded="true" />
             <element signature="method#remove#1;class#LinkedList#0" />
-            <element signature="e#5906#5907#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/edu/isel/adeetc/poo/DynamicArrayTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+          <folding>
+            <element signature="method#displayOdds#0;class#Main#0" />
+            <element signature="method#displayOddsLikeABoss#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/DynamicArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="164" column="39" lean-forward="true" selection-start-line="164" selection-start-column="39" selection-end-line="164" selection-end-column="39" />
+          <folding>
+            <element signature="docComment;class#DynamicArray#0" />
+            <element signature="method#growArrayIfNeeded#0;class#DynamicArray#0" />
+            <element signature="e#1453#1454#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
+            <element signature="method#add#0;class#DynamicArray#0" />
+            <element signature="method#add#1;class#DynamicArray#0" />
+            <element signature="e#3541#3542#0" expanded="true" />
+            <element signature="e#3568#3569#0" expanded="true" />
+            <element signature="e#4270#4271#0" expanded="true" />
+            <element signature="e#4304#4305#0" expanded="true" />
+            <element signature="e#4810#4811#0" expanded="true" />
+            <element signature="e#4845#4846#0" expanded="true" />
+            <element signature="e#4975#4976#0" expanded="true" />
+            <element signature="e#5034#5035#0" expanded="true" />
           </folding>
         </state>
       </provider>

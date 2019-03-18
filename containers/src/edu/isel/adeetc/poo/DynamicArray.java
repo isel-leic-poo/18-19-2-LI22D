@@ -5,30 +5,6 @@ package edu.isel.adeetc.poo;
  */
 public class DynamicArray implements Sequence {
 
-    private static class ArrayIterator implements Iterator {
-
-        private final DynamicArray array;
-        private int iterator;
-
-        ArrayIterator(DynamicArray array) {
-            this.array = array;
-            this.iterator = 0;
-        }
-
-        @Override
-        public int next() {
-            if (!hasNext())
-                throw new IllegalStateException();
-
-            return array.get(++iterator);
-        }
-
-        @Override
-        public boolean hasNext() {
-            return iterator != array.size() - 1;
-        }
-    }
-
     private static final int INITIAL_CAPACITY = 4;
     private int[] array;
     private int size;
@@ -178,6 +154,21 @@ public class DynamicArray implements Sequence {
      */
     @Override
     public Iterator iterator() {
-        return new ArrayIterator(this);
+        return new Iterator() {
+            private int iterator = 0;
+
+            @Override
+            public int next() {
+                if (!hasNext())
+                    throw new IllegalStateException();
+
+                return get(++iterator);
+            }
+
+            @Override
+            public boolean hasNext() {
+                return iterator != size() - 1;
+            }
+        };
     }
 }
