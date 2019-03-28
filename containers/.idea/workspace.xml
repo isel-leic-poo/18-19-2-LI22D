@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a93a1b06-a86d-4941-b428-c7457ed2bf60" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/isel/adeetc/poo/DynamicArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/isel/adeetc/poo/DynamicArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/isel/adeetc/poo/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/isel/adeetc/poo/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tic-tac-toe/src/edu/isel/adeetc/poo/model/Coordinate.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,39 +24,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+            <state relative-caret-position="619">
+              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
               <folding>
-                <element signature="method#displayOdds#0;class#Main#0" />
-                <element signature="method#displayOddsLikeABoss#0;class#Main#0" />
+                <element signature="method#main#0;class#Main#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/DynamicArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="164" column="39" lean-forward="true" selection-start-line="164" selection-start-column="39" selection-end-line="164" selection-end-column="39" />
+            <state relative-caret-position="1254">
+              <caret line="164" column="39" selection-start-line="164" selection-start-column="39" selection-end-line="164" selection-end-column="39" />
               <folding>
                 <element signature="docComment;class#DynamicArray#0" />
                 <element signature="method#growArrayIfNeeded#0;class#DynamicArray#0" />
-                <element signature="e#1453#1454#0" expanded="true" />
-                <element signature="e#1491#1492#0" expanded="true" />
                 <element signature="method#add#0;class#DynamicArray#0" />
                 <element signature="method#add#1;class#DynamicArray#0" />
-                <element signature="e#3541#3542#0" expanded="true" />
-                <element signature="e#3568#3569#0" expanded="true" />
-                <element signature="e#4270#4271#0" expanded="true" />
-                <element signature="e#4304#4305#0" expanded="true" />
-                <element signature="e#4810#4811#0" expanded="true" />
-                <element signature="e#4845#4846#0" expanded="true" />
-                <element signature="e#4975#4976#0" expanded="true" />
-                <element signature="e#5034#5035#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,11 +89,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="79" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="777" />
+    <option name="height" value="1001" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -115,8 +100,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -331,9 +316,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="1001" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31761006" visible="true" weight="0.3029079" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.31761006" weight="0.30775446" />
       <window_info id="Structure" order="1" sideWeight="0.6823899" side_tool="true" weight="0.39176092" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -433,36 +419,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/DynamicArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        <state relative-caret-position="1254">
+          <caret line="164" column="39" selection-start-line="164" selection-start-column="39" selection-end-line="164" selection-end-column="39" />
           <folding>
-            <element signature="method#displayOdds#0;class#Main#0" />
-            <element signature="method#displayOddsLikeABoss#0;class#Main#0" />
+            <element signature="docComment;class#DynamicArray#0" />
+            <element signature="method#growArrayIfNeeded#0;class#DynamicArray#0" />
+            <element signature="method#add#0;class#DynamicArray#0" />
+            <element signature="method#add#1;class#DynamicArray#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/DynamicArray.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/isel/adeetc/poo/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="164" column="39" lean-forward="true" selection-start-line="164" selection-start-column="39" selection-end-line="164" selection-end-column="39" />
+        <state relative-caret-position="619">
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
           <folding>
-            <element signature="docComment;class#DynamicArray#0" />
-            <element signature="method#growArrayIfNeeded#0;class#DynamicArray#0" />
-            <element signature="e#1453#1454#0" expanded="true" />
-            <element signature="e#1491#1492#0" expanded="true" />
-            <element signature="method#add#0;class#DynamicArray#0" />
-            <element signature="method#add#1;class#DynamicArray#0" />
-            <element signature="e#3541#3542#0" expanded="true" />
-            <element signature="e#3568#3569#0" expanded="true" />
-            <element signature="e#4270#4271#0" expanded="true" />
-            <element signature="e#4304#4305#0" expanded="true" />
-            <element signature="e#4810#4811#0" expanded="true" />
-            <element signature="e#4845#4846#0" expanded="true" />
-            <element signature="e#4975#4976#0" expanded="true" />
-            <element signature="e#5034#5035#0" expanded="true" />
+            <element signature="method#main#0;class#Main#0" />
           </folding>
         </state>
       </provider>
