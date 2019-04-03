@@ -1,44 +1,124 @@
 package edu.isel.adeetc.poo.model;
 
+import java.util.LinkedList;
+
 /**
  * Class whose instances represent the tic-tac-toe game board.
  */
 public class Board {
 
-    private void checkBounds(int x, int y) {
-        if (x < 0 || x >= SIDE || y < 0 || y >= SIDE) {
-            throw new IllegalArgumentException("Invalid move coordinates (" + x + ", " + y + ")");
-        }
-    }
-    private static final int SIDE = 3;
+    /**
+     * Contract to be supported by all interested parties on receiving notifications for model changes.
+     */
+    public interface ChangeListener {
 
-    private static class Move {
-        final Coordinate coordinate;
-        final Player player;
+        /**
+         * Signals that a change as occurred on the board.
+         * @param board the board instance from where the notification originates.
+         * @param x the horizontal coordinate of the change.
+         * @param y the vertical coordinate of the change.
+         */
+        void boardChanged(Board board, int x, int y);
+
+        void andTheWinnerIs(Player winner);
+    }
+
+    /**
+     * Class whose instances represent moves.
+     */
+    public static class Move {
+        /** The board coordinates of the move. */
+        public final Coordinate coordinate;
+        /** The player instance that made the move. */
+        public final Player player;
         public Move(int x, int y, Player player) {
             this.coordinate = new Coordinate(x, y);
             this.player = player;
         }
     }
 
-    private final Move[][] board = new Move[SIDE][SIDE];
-    private int moves = 0;
+    private static final int SIDE = 3;
 
+    /**
+     * Helper method used to check if there are any free positions in the game board.
+     * @return {@literal true} if there are empty positions, {@literal false} otherwise.
+     */
+    private boolean hasFreePositions() {
+        return moves != SIDE * SIDE;
+    }
+
+    /**
+     * Helper method used to chek if the given arguments represent coordinates within the board bounds.
+     * @param x the horizontal coordinate to be checked.
+     * @param y the vertical coordinate to be checked.
+     * @throws IllegalArgumentException if the given coordinates are not within the legal bounds.
+     */
+    private void checkBounds(int x, int y) {
+        if (x < 0 || x >= SIDE || y < 0 || y >= SIDE) {
+            throw new IllegalArgumentException("Invalid move coordinates (" + x + ", " + y + ")");
+        }
+    }
+
+    /**
+     * Gets the player instance at the given coordinates.
+     * @param x the horizontal coordinate.
+     * @param y he vertical coordinate.
+     * @return The player instance, or {@literal null} if no move has been made on that position.
+     */
     private Player getPlayerAt(int x, int y) {
         return board[x][y] != null ? board[x][y].player : null;
     }
 
+    private final Move[][] board = new Move[SIDE][SIDE];
+    private int moves = 0;
+    private LinkedList<ChangeListener> listeners = new LinkedList<>();
+
+    /**
+     * Register the given listener for receiving board changes notifications.
+     * @param listener the listener to be registered.
+     */
+    public void addListener(ChangeListener listener) {
+        this.listeners.add(listener);
+    }
+
+    /**
+     * Checks whether a given position is occupied by a move or not.
+     * @param x the horizontal coordinate.
+     * @param y the vertical coordinate.
+     * @return {@literal true} if the position has been used by a move, {@literal false} otherwise.
+     * @throws IllegalArgumentException if the specified position is not within the board's bounds.
+     */
     public boolean hasMoveAt(int x, int y) {
         checkBounds(x, y);
         return board[x][y] != null;
     }
 
+    /**
+     * Makes a move at the specified position.
+     * @param x the horizontal coordinate of the move.
+     * @param y the vertical coordinate of the move.
+     * @param player the player that made the move.
+     * @throws IllegalArgumentException if the specified position is not within the board's bounds.
+     */
     public void setMoveAt(int x, int y, Player player) {
         checkBounds(x, y);
         board[x][y] = new Move(x, y, player);
         moves += 1;
+
+        for (ChangeListener listener : listeners) {
+            listener.boardChanged(this, x, y);
+        }
+
+        if (hasGameEnded())
+            for (ChangeListener listener : listeners) {
+                listener.andTheWinnerIs(getWinner());
+            }
     }
 
+    /**
+     * Gets the player that won the game, if one exists.
+     * @return the winner, or {@literal null} if no one won.
+     */
     public Player getWinner() {
         Player[] maybeWinner = new Player[SIDE * 2 + 2];
         maybeWinner[SIDE * 2] = getPlayerAt(0, 0);
@@ -67,11 +147,31 @@ public class Board {
         return null;
     }
 
+    /**
+     * Checks whether the game has ended or not.
+     * @return {@literal true} if the game has ended, {@literal false} otherwise.
+     */
     public boolean hasGameEnded() {
         return !hasFreePositions() || getWinner() != null;
     }
 
-    private boolean hasFreePositions() {
-        return moves != SIDE * SIDE;
+    /**
+     * Gets the move at the given coordinates.
+     * @param x the move's horizontal coordinate
+     * @param y the move's vertical coordinate
+     * @return  the move at the position, or {@literal null} if no move has been made at that position.
+     * @throws IllegalArgumentException if the specified position is not within the board's bounds.
+     */
+    public Move getMoveAt(int x, int y) {
+        checkBounds(x, y);
+        return board[x][y];
+    }
+
+    /**
+     * Gets the board side.
+     * @return  The board side.
+     */
+    public int getSide() {
+        return SIDE;
     }
 }

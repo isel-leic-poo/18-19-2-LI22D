@@ -65,7 +65,7 @@ public class BoardTests {
     @Test
     public void hasMoveAtPosition_returnsTrueIfOccupied() {
         Board sut = new Board();
-        Player player = new Player(sut);
+        Player player = new Player(sut, "SUT");
 
         sut.setMoveAt(0, 0, player);
         Assert.assertTrue(sut.hasMoveAt(0, 0));
@@ -74,8 +74,8 @@ public class BoardTests {
     @Test
     public void hasGameEnded_returnsTrueForCompletedGame() {
         final Board sut = new Board();
-        final Player p1 = new Player(sut);
-        final Player p2 = new Player(sut);
+        final Player p1 = new Player(sut, "SUT");
+        final Player p2 = new Player(sut, "SUT");
         doP1WinningMoves(p1, p2);
         Assert.assertTrue(sut.hasGameEnded());
     }
@@ -83,8 +83,8 @@ public class BoardTests {
     @Test
     public void getWinner_returnsPlayerThatWon() {
         final Board sut = new Board();
-        final Player p1 = new Player(sut);
-        final Player p2 = new Player(sut);
+        final Player p1 = new Player(sut, "SUT");
+        final Player p2 = new Player(sut, "SUT");
         doP1WinningMoves(p1, p2);
         Assert.assertSame(p1, sut.getWinner());
     }
@@ -98,8 +98,8 @@ public class BoardTests {
     @Test
     public void getWinner_returnsNullIfNobodyWon() {
         final Board sut = new Board();
-        final Player p1 = new Player(sut);
-        final Player p2 = new Player(sut);
+        final Player p1 = new Player(sut, "SUT");
+        final Player p2 = new Player(sut, "SUT");
         doDrawMoves(p1, p2);
         Assert.assertNull(sut.getWinner());
     }
@@ -107,8 +107,8 @@ public class BoardTests {
     @Test
     public void getWinner_onBoardWithP1DiagonalWin_returnsP1() {
         final Board sut = new Board();
-        final Player p1 = new Player(sut);
-        final Player p2 = new Player(sut);
+        final Player p1 = new Player(sut, "SUT");
+        final Player p2 = new Player(sut, "SUT");
         doP1DiagonalWinningMoves(p1, p2);
         Assert.assertSame(p1, sut.getWinner());
     }
@@ -116,8 +116,8 @@ public class BoardTests {
     @Test
     public void getWinner_onBoardWithP2DiagonalWin_returnsP1() {
         final Board sut = new Board();
-        final Player p1 = new Player(sut);
-        final Player p2 = new Player(sut);
+        final Player p1 = new Player(sut, "SUT");
+        final Player p2 = new Player(sut, "SUT");
         doP2DiagonalWinningMoves(p1, p2);
         Assert.assertSame(p2, sut.getWinner());
     }

@@ -1,9 +1,11 @@
 package edu.isel.adeetc.poo.model;
 
 /**
- * Class whose instances represent rectangular coordinates.
+ * Class whose instances represent rectangular coordinates. Instances are immutable, the contained coordinate values
+ * do not change.
  */
 public class Coordinate {
+
     public final int x, y;
 
     public Coordinate() {
