@@ -20,6 +20,10 @@ public class Board {
          */
         void boardChanged(Board board, int x, int y);
 
+        /**
+         * Signals that the game is completed and a winner was found.
+         * @param winner the winner.
+         */
         void andTheWinnerIs(Player winner);
     }
 
