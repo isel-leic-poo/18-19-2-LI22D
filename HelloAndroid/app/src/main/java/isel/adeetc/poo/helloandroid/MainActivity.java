@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private TextView counterValue;
+    private Counter model;
 
     private void updateUI(Counter model) {
         counterValue.setText(Integer.toString(model.getValue()));
@@ -19,8 +20,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.v("CounterActivity", "onCreate()");
 
-        final Counter model = new Counter(0, 10);
+        model = savedInstanceState != null ?
+            new Counter(savedInstanceState.getInt("counter", 0), 10) :
+            new Counter(0, 10);
+
         counterValue = new TextView(this);
 
         Button incButton = new Button(this);
@@ -28,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         incButton.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
                 model.increment();
-                Log.v("MainActivity", "increment");
+                Log.v("CounterActivity", "increment");
             }
         });
         Button decButton = new Button(this);
@@ -36,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         decButton.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
                 model.decrement();
-                Log.v("MainActivity", "decrement");
+                Log.v("CounterActivity", "decrement");
             }
         });
 
@@ -44,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void valueChanged(Counter counter) {
                 updateUI(counter);
-                Log.v("MainActivity", "Counter.Listener.valueChanged");
+                Log.v("CounterActivity", "Counter.Listener.valueChanged");
             }
         });
 
@@ -56,5 +61,18 @@ public class MainActivity extends AppCompatActivity {
         content.addView(decButton);
 
         setContentView(content);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("counter", model.getValue());
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.v("CounterActivity", "onDestroy()");
+
     }
 }

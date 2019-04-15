@@ -1,7 +1,5 @@
 package isel.adeetc.poo.helloandroid;
 
-import java.util.List;
-
 public class Counter {
 
     public interface Listener {
