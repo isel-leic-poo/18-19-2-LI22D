@@ -1,5 +1,7 @@
 package isel.adeetc.poo.mydraw.model;
 
+import java.util.Scanner;
+
 public class Point {
 
     private final int x, y;
@@ -16,4 +18,19 @@ public class Point {
     public int getY() {
         return y;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder result = new StringBuilder();
+        result.append(getX())
+                .append(' ')
+                .append(getY());
+
+        return result.toString();
+    }
+
+    public static Point fromFile(Scanner in) {
+        return new Point(in.nextInt(), in.nextInt());
+    }
+
 }

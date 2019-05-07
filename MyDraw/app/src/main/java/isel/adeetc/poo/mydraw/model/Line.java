@@ -1,5 +1,7 @@
 package isel.adeetc.poo.mydraw.model;
 
+import java.util.Scanner;
+
 public class Line {
 
     private final Point pi;
@@ -21,5 +23,16 @@ public class Line {
 
     public Point getPf() {
         return pf;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder result = new StringBuilder();
+        result.append(pi.toString()).append(' ').append(pf.toString()).append('\n');
+        return result.toString();
+    }
+
+    public static Line fromFile(Scanner in) {
+        return new Line(Point.fromFile(in), Point.fromFile(in));
     }
 }
