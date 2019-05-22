@@ -50,6 +50,14 @@ public class BoardView extends TilePanel {
                 setTile(x, y, createTile(move));
             }
         }
-    }
 
+        model.addListener(new Board.ChangeAdapter() {
+            @Override
+            public void boardChanged(Board board, int x, int y) {
+                final Board.Move move = board.getMoveAt(x, y);
+                setTile(x, y, createTile(move));
+            }
+        });
+
+    }
 }

@@ -27,6 +27,14 @@ public class Board {
         void andTheWinnerIs(Player winner);
     }
 
+    public static class ChangeAdapter implements ChangeListener {
+        @Override
+        public void boardChanged(Board board, int x, int y) { }
+
+        @Override
+        public void andTheWinnerIs(Player winner) { }
+    }
+
     /**
      * Class whose instances represent moves.
      */
@@ -55,7 +63,6 @@ public class Board {
      * Helper method used to chek if the given arguments represent coordinates within the board bounds.
      * @param x the horizontal coordinate to be checked.
      * @param y the vertical coordinate to be checked.
-     * @throws IllegalArgumentException if the given coordinates are not within the legal bounds.
      */
     private void checkBounds(int x, int y) {
         if (x < 0 || x >= SIDE || y < 0 || y >= SIDE) {
@@ -90,7 +97,6 @@ public class Board {
      * @param x the horizontal coordinate.
      * @param y the vertical coordinate.
      * @return {@literal true} if the position has been used by a move, {@literal false} otherwise.
-     * @throws IllegalArgumentException if the specified position is not within the board's bounds.
      */
     public boolean hasMoveAt(int x, int y) {
         checkBounds(x, y);
@@ -102,10 +108,13 @@ public class Board {
      * @param x the horizontal coordinate of the move.
      * @param y the vertical coordinate of the move.
      * @param player the player that made the move.
-     * @throws IllegalArgumentException if the specified position is not within the board's bounds.
      */
     public void setMoveAt(int x, int y, Player player) {
         checkBounds(x, y);
+
+        if (hasGameEnded())
+            throw new IllegalStateException();
+
         board[x][y] = new Move(x, y, player);
         moves += 1;
 
@@ -164,7 +173,6 @@ public class Board {
      * @param x the move's horizontal coordinate
      * @param y the move's vertical coordinate
      * @return  the move at the position, or {@literal null} if no move has been made at that position.
-     * @throws IllegalArgumentException if the specified position is not within the board's bounds.
      */
     public Move getMoveAt(int x, int y) {
         checkBounds(x, y);

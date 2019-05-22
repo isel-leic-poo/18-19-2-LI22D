@@ -4,6 +4,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 
+import edu.isel.adeetc.poo.Img;
 import edu.isel.adeetc.tictactoe.model.Board;
 
 /**
