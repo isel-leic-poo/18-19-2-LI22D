@@ -1,6 +1,7 @@
 package edu.isel.adeetc.tictactoe.model;
 
 import java.util.LinkedList;
+import java.util.Scanner;
 
 /**
  * Class whose instances represent the tic-tac-toe game board.
@@ -185,5 +186,46 @@ public class Board {
      */
     public int getSide() {
         return SIDE;
+    }
+
+    /**
+     * Gets a string representation that can be used to store the board's state.
+     * @return  the state of the board encoded as a string
+     */
+    public String getSaveState() {
+        StringBuilder builder = new StringBuilder();
+        for (Move[] line : board) {
+            for (Move move : line)
+                builder.append(move == null ? '_' : move.player.getId())
+                        .append(' ');
+
+            builder.append('\n');
+        }
+        return builder.toString();
+    }
+
+    /**
+     * Method that changes :-/ the board instance state from the given string representation.
+     * @param savedState the saved state.
+     * @param p1 The first player instance
+     * @param p2 The second player instance
+     */
+    public void loadSavedState(String savedState, Player p1, Player p2) {
+        Scanner in = new Scanner(savedState);
+        int line = 0;
+        while (in.hasNextLine()) {
+            final String lineContent = in.nextLine();
+            final String[] tokens = lineContent.split(" ");
+            int column = 0;
+            for (String token : tokens) {
+                final String trimmedToken = token.trim();
+                if (!trimmedToken.equals("_")) {
+                    board[line][column] = new Move(column, line,
+                            trimmedToken.equals(p1.getId()) ? p1 : p2);
+                }
+               column += 1;
+            }
+            line += 1;
+        }
     }
 }
